@@ -1,0 +1,31 @@
+{
+  "name": "interview_practice",
+  "version": "1.0.0",
+  "description": "space to build practice problems",
+  "main": "build/dice.js",
+  "scripts": {
+    "test": "jest --watch --coverage"
+  },
+  "author": "Spencer Dent",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.8.3",
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.8.0",
+    "jest": "^24.9.0",
+    "ramda": "^0.26.1"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
+  }
+}
