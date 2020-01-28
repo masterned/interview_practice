@@ -4,13 +4,14 @@ import {
 } from 'ramda'
 
 const {
-  random
+  random,
+  trunc
 } = Math
 
 //! there really is not a good way to test somthing like this
 //* as far as I know...
 export const roll = times => sides =>
   map(
-    () => random * sides,
+    () => trunc(random() * sides),
     range(0, times)
   )
