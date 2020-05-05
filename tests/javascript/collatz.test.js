@@ -1,11 +1,6 @@
-import {
-  debug,
-  sequence
-} from '../src/collatz'
+import { debug, sequence } from '../../src/javascript/collatz'
 
-const {
-  step
-} = debug
+const { step } = debug
 
 describe('step', () => {
   it('divides by 2 if even', () => {

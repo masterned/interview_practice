@@ -1,14 +1,14 @@
 import {
-  groupWith,
-  equals,
-  compose,
+  __,
   any,
-  length,
-  range,
-  map,
-  remove,
+  compose,
+  equals,
+  groupWith,
   join,
-  __
+  length,
+  map,
+  range,
+  remove
 } from 'ramda'
 
 export const toPossibility = boolean =>

@@ -10,7 +10,7 @@ import {
   map,
   prepend,
   subtract
-} from "ramda"
+} from 'ramda'
 
 const numeralMap = new Map([
   [1000, 'M'],

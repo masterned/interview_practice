@@ -1,11 +1,28 @@
-import {
-  clamp,
-  doubleSeconds,
-  isDivisible,
-  isOnlyNums,
-  isValid,
-  removeWhitespace
-} from '../src/luhn'
+import isValid, { clamp, convertToString, doubleSeconds, isDivisible, isOnlyNums, removeWhitespace } from '../src/luhn'
+import { toString } from 'ramda'
+
+describe('convertToString', () => {
+  it('returns the string if passed a string', () => {
+    expect(convertToString('hello'))
+      .toBe('hello')
+  })
+
+  it('converts all values of an array to a string and concats them', () => {
+    expect(convertToString([1, 2, 3, 4, 5, 6]))
+      .toBe('123456')
+  })
+
+  const person = {
+    age: 42,
+    drink: 'water',
+    name: 'Fred'
+  }
+
+  it('converts the value using ramda\'s toString function otherwise', () => {
+    expect(convertToString(person))
+      .toBe(toString(person))
+  })
+})
 
 describe('isDivisible', () => {
   it('returns whether one number is divisible by another', () => {
