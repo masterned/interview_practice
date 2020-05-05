@@ -32,7 +32,7 @@
             }
         ],
         "array-element-newline": [
-            "error",
+            "warn",
             "consistent"
         ],
         "arrow-body-style": [
@@ -142,15 +142,6 @@
             "error",
             "unix"
         ],
-        "max-len": [
-            "error",
-            {
-                "code": 80,
-                "ignoreUrls": true,
-                "comments": 80,
-                "ignoreStrings": true
-            }
-        ],
         "multiline-ternary": "error",
         "new-cap": [
             "error",
@@ -186,6 +177,7 @@
         "no-implied-eval": "error",
         "no-trailing-spaces": "error",
         "no-var": "error",
+        "no-unused-vars": "warn",
         "no-useless-rename": "error",
         "no-whitespace-before-property": "error",
         "no-with": "error",
@@ -217,7 +209,7 @@
         ],
         "semi-spacing": "error",
         "semi-style": "error",
-        "sort-imports": "error",
+        "sort-imports": "warn",
         "sort-keys": "error",
         "space-infix-ops": "error",
         "strict": [
